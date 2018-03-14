@@ -5,15 +5,9 @@
  */
 package monsterengine;
 
-import java.awt.image.BufferedImage;
 import java.io.File;
-import javax.imageio.ImageIO;
 
 public class GameVariables {
     public static int mapSize = 10;
-    /**
-    private static File slate = new File(".png");
-    private static File java= new File("java.png");
-    private static File pane= new File("pane.png");
-    **/
+    public static File player = new File("./Textures/Entities/Player/LivePlayer.png");
 }

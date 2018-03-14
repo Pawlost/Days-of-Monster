@@ -5,11 +5,18 @@
  */
 package monsterengine;
 
+import monsterengine.menu.GUI;
+
 public class MonsterEngine{
 
     public static void main(String[] args) {
-        GUI window = new GUI();
-        window.setVisible(true);
-        window.setSize(900, 600);
+               java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                GUI hlavniJFrame = new GUI();
+        hlavniJFrame.setLocationRelativeTo(null);
+        hlavniJFrame.setVisible(true);
+            }
+        });
+   
     }
 }
