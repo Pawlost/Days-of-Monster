@@ -5,14 +5,14 @@
  */
 package monsterengine;
 
-import monsterengine.menu.GUI;
+import monsterengine.menu.TestMap;
 
 public class MonsterEngine{
 
     public static void main(String[] args) {
                java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                GUI hlavniJFrame = new GUI();
+                TestMap hlavniJFrame = new TestMap();
         hlavniJFrame.setLocationRelativeTo(null);
         hlavniJFrame.setVisible(true);
             }
