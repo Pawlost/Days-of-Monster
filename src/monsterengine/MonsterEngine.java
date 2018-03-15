@@ -7,16 +7,16 @@ package monsterengine;
 
 import monsterengine.menu.TestMap;
 
-public class MonsterEngine{
+public class MonsterEngine {
 
     public static void main(String[] args) {
-               java.awt.EventQueue.invokeLater(new Runnable() {
+        java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 TestMap hlavniJFrame = new TestMap();
-        hlavniJFrame.setLocationRelativeTo(null);
-        hlavniJFrame.setVisible(true);
+                hlavniJFrame.setLocationRelativeTo(null);
+                hlavniJFrame.setVisible(true);
             }
         });
-   
+
     }
 }

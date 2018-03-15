@@ -13,14 +13,7 @@ import java.util.logging.Logger;
 public class Ground extends GameObject {
     private static Image groundImage;
 
-    public Ground(int posX, int posY) {
-        super(posX, posY, groundImage);
-    }
-    private static void ctreateImage(){
-        try {
-            groundImage = ImageIO.read(GameVariables.ground);
-        } catch (IOException ex) {
-            Logger.getLogger(TestMap.class.getName()).log(Level.SEVERE, null, ex);
-        }
+    public Ground() {
+        super(GameVariables.ground);
     }
 }

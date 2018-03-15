@@ -15,13 +15,6 @@ public class Player extends GameObject {
 
     public Player(int posX, int posY)
     {
-        super(posX, posY, playerImage);
-    }
-    private static void ctreateImage() {
-        try {
-            playerImage = ImageIO.read(GameVariables.player);
-        } catch (IOException ex) {
-            Logger.getLogger(TestMap.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        super( GameVariables.player);
     }
 }

@@ -5,33 +5,34 @@
  */
 package monsterengine.menu;
 
-import java.awt.BorderLayout;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
+import java.awt.*;
+import javax.swing.*;
 
+import Game.GameObject;
 import Game.GameObjects.Ground;
+import monsterengine.GameVariables;
 
 public class TestMap extends JFrame {
-
-    private JPanel drawingBoard;
-
-    private static final int GAP = 5;
-    private JPanel[][] map = new Ground[10][10];
-    private JButton btn;
 
     public TestMap() {
 
         super("Monster Engine");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLocationRelativeTo(null);
-        this.setLayout(new BorderLayout());
-
-        JPanel pane = new Ground(0,0);
-
-        this.add(pane);
+        this.setLayout(new GridBagLayout());
+        GridBagConstraints c = new GridBagConstraints();
+        c.fill = GridBagConstraints.BOTH;
+        c.ipadx = 40;
+        c.ipady = 40;
+        for (int i=1; i <= GameVariables.mapSize; i++) {
+            for(int i2=1; i2 <= GameVariables.mapSize; i2++) {
+                Ground g = new Ground();
+                c.gridx = i2;
+                c.gridy = i;
+                this.add(g, c);
+            }
+        }
         this.pack();
-
         this.setSize(900, 600);
         this.setVisible(true);
     }

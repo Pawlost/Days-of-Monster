@@ -11,6 +11,6 @@ public class GameVariables {
     public static int mapSize = 10;
     public static int gameObjectSize = 50;
 
-    public static File player = new File("./Textures/Game/Entities/Player/LivePlayer.png");
-    public static File ground = new File("./Textures/Game/GameObjects/Ground.png");
+    public static File player = new File("./Textures/Entities/Player/LivePlayer.png");
+    public static File ground = new File("./Textures/GameObjects/Ground.png");
 }
