@@ -9,7 +9,7 @@ import java.io.File;
 
 public class GameVariables {
     public static int mapSize = 10;
-    public static int gameObjectSize = 50;
+    public static int gameObjectSize = 40;
 
     public static File player = new File("./Textures/Entities/Player/LivePlayer.png");
     public static File ground = new File("./Textures/GameObjects/Ground.png");

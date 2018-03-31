@@ -5,7 +5,7 @@
  */
 package monsterengine;
 
-import monsterengine.menu.TestMap;
+import Game.menu.TestMap;
 
 public class MonsterEngine {
 
