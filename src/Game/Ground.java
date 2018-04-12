@@ -1,8 +1,8 @@
-package Game.GameObjects;
+package Game;
 
-import Game.Entíties.Player;
+import Engine.Entíties.Player;
 import Game.GameObject;
-import monsterengine.GameVariables;
+import Engine.GameVariables;
 
 import java.awt.*;
 
@@ -11,7 +11,7 @@ public class Ground extends GameObject {
     private int size = GameVariables.gameObjectSize;
 
     public Ground(int posX, int posY) {
-        super(posX, posY, GameVariables.ground);
+        super(posX, posY, GameVariables.gameObjectSize, GameVariables.gameObjectSize, GameVariables.ground);
     }
     public void addPlayer(Player player){
         super.addDrawingImage(player.getImage());

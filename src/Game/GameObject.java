@@ -1,8 +1,5 @@
 package Game;
 
-import monsterengine.GameVariables;
-import Game.menu.TestMap;
-
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
@@ -16,25 +13,25 @@ public class GameObject extends JPanel {
     private ArrayList<Image> objectImages = new ArrayList<Image>();
     GridBagConstraints gc = new GridBagConstraints();
 
-    protected GameObject(int posX, int posY, File image) {
+    protected GameObject(int posX, int posY, int scaleX, int scaleY, File image) {
 
         gc.fill = GridBagConstraints.BOTH;
         gc.gridx = posX;
         gc.gridy = posY;
 
-        gc.ipady = GameVariables.gameObjectSize;
-        gc.ipadx = GameVariables.gameObjectSize;
+        gc.ipady = scaleX;
+        gc.ipadx = scaleY;
 
         super.setMinimumSize(new Dimension(50, 50));
         try {
             Image objectImage = ImageIO.read(image);
             objectImages.add(objectImage);
         } catch (IOException ex) {
-            Logger.getLogger(TestMap.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Map.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
-    public void addOnMap(JFrame jf) {
+    void addOnMap(JFrame jf) {
         jf.add(this, gc);
     }
 
@@ -51,7 +48,7 @@ public class GameObject extends JPanel {
         }
     }
 
-    public void addDrawingImage(Image other) {
+    void addDrawingImage(Image other) {
         objectImages.add(other);
     }
     public Image getImage(){

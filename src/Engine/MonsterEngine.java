@@ -3,20 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package monsterengine;
-
-import Game.menu.TestMap;
+package Engine;
 
 public class MonsterEngine {
+    private Editor editor;
 
     public static void main(String[] args) {
+        createEditor();
+    }
+
+    private static void createEditor() {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                TestMap hlavniJFrame = new TestMap();
-                hlavniJFrame.setLocationRelativeTo(null);
-                hlavniJFrame.setVisible(true);
+                Editor editor = new Editor();
+                editor.setLocationRelativeTo(null);
+                editor.setVisible(true);
             }
         });
-
     }
 }
