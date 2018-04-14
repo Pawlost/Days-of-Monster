@@ -1,18 +1,17 @@
 package Game.GameObjects;
 
-import Game.Entíties.Player;
 import Engine.GameVariables;
-
-import java.awt.*;
+import Game.Entíties.Entity;
+import javafx.scene.layout.GridPane;
 
 public class Ground extends GameObject {
-    private static Image groundImage;
-    private int size = GameVariables.gameObjectSize;
-
+    private boolean isOpen = true;
     public Ground(int posX, int posY) {
-        super(posX, posY, GameVariables.gameObjectSize, GameVariables.gameObjectSize);
+        super(posX, posY, GameVariables.gameObjectSize, GameVariables.gameObjectSize, GameVariables.groundImage);
     }
-    public void addPlayer(Player player){
-        super.addDrawingImage(player.getImage());
+    public void addEntity(Entity entity, GridPane root){
+        if(isOpen) {
+            entity.renderEntity(root);
+        }
     }
 }

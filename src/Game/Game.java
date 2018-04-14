@@ -23,11 +23,11 @@ public class Game extends Application  {
         @Override
         public void start(Stage primaryStage) throws Exception{
             GridPane root1 = new GridPane();
+
             root1.setAlignment(Pos.CENTER);
 
             ArrayList<Map> maps = new ArrayList<>();
-            maps.add(new Map("Map 1"));
-            maps.get(0).CreateMap(root1);
+            maps.add(new Map("Map 1", root1));
 
             primaryStage.setTitle("World");
             primaryStage.setScene(new Scene(root1, 1200, 900));

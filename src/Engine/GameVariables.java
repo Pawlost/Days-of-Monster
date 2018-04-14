@@ -7,13 +7,15 @@ package Engine;
 
 import javafx.scene.image.Image;
 
-import java.io.File;
-
 public class GameVariables {
     public static int mapSize = 10;
-    public static int gameObjectSize = 40;
-    public static int entityObjectSize = 60;
+    public static int gameObjectSize = 60;
+    public static int entityObjectSize = 40;
 
-    public static String playerUrl = "./src/Engine/res/Textures/Entities/Player/LivePlayer.png";
-    public static String groundUrl ="./src/Engine/res/Textures/GameObjects/Ground.png";
+    public static Image groundImage = new Image("file:src/Curator/Textures/GameObjects/Ground.png");
+    public static Image playerImage = new Image("file:src/Curator/Textures/Entities/Player/LivePlayer.png");
+    /*---------------------------------------------------------
+    MAP1
+    */
+    public static int playerOnMap = 2;
 }

@@ -1,43 +1,31 @@
 package Game;
-
-import Game.Entíties.Player;
 import Engine.GameVariables;
+import Game.Entíties.Player;
 import Game.GameObjects.Ground;
-import javafx.scene.Group;
-import javafx.scene.image.Image;
 import javafx.scene.layout.GridPane;
-import javafx.scene.paint.ImagePattern;
-import javafx.scene.shape.Rectangle;
-
-import javax.imageio.ImageIO;
-import java.awt.image.BufferedImage;
-import java.io.IOException;
 
 public class Map {
     private Ground[][] map = new Ground[GameVariables.mapSize][GameVariables.mapSize];
     private String name;
+    GridPane context;
 
-    public Map(String name){
+    public Map(String name, GridPane context){
         this.name = name;
+        this.context = context;
+        CreateMap();
         CreateEntities();
     }
 
-    public void CreateMap(GridPane root){
+    public void CreateMap(){
         for (int posY = 0; posY < GameVariables.mapSize; posY++) {
             for(int posX=0; posX < GameVariables.mapSize; posX++) {
-
-                Image objectImage = new Image("file:src/Engine/res/Textures/GameObjects/Ground.png");
-
-                Rectangle rec = new Rectangle(50,50);
-                rec.setFill(new ImagePattern(objectImage, 0, 0, 1, 1, true));
-
-                root.add(rec, posX, posY);
                 map[posY][posX] = new Ground(posX, posY);
-
+                map[posY][posX].renderObject(context);
             }
         }
     }
 
     private void CreateEntities(){
+        map[1][2].addEntity(new Player(1, 2), context);
     }
 }

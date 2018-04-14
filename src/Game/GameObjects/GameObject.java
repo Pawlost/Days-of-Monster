@@ -1,34 +1,41 @@
 package Game.GameObjects;
 
-import Game.Map;
+import Engine.GameVariables;
 import javafx.scene.Group;
 import javafx.scene.image.Image;
-
-import java.awt.*;
-import java.util.ArrayList;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.Pane;
+import javafx.scene.paint.ImagePattern;
+import javafx.scene.shape.Rectangle;
 
 public abstract class GameObject {
-    private ArrayList<Image> objectImages = new ArrayList<Image>();
-    private GridBagConstraints gc = new GridBagConstraints();
 
-    protected GameObject(int posX, int posY, int scaleX, int scaleY) {
+    private int posX;
+    private int posY;
+    private int width;
+    private int height;
+    private Image objectImage;
 
-        gc.fill = GridBagConstraints.BOTH;
-        gc.gridx = posX;
-        gc.gridy = posY;
+    protected GameObject(int posX, int posY, int width, int height, Image objectImage) {
+        this.posX = posX;
+        this.posY = posY;
+        this.width = width;
+        this.height = height;
 
-        gc.ipady = scaleX;
-        gc.ipadx = scaleY;
+        this.objectImage = objectImage;
     }
 
-    protected void paintComponent(Group g) {
+    public void renderObject(GridPane root){
+        Rectangle rec = new Rectangle(width,height);
+        rec.setFill(new ImagePattern(objectImage, 0, 0, 1, 1, true));
+        root.add(rec, posX, posY);
     }
 
-    void addDrawingImage(Image other) {
-        objectImages.add(other);
+    public void centerRenderObject(GridPane root, Pane pane){
+        Rectangle rec = new Rectangle((GameVariables.gameObjectSize-width)/2,(GameVariables.gameObjectSize-width)/2 ,width, height);
+        rec.setFill(new ImagePattern(objectImage, 0, 0, 1, 1, true));
+        pane.getChildren().add(rec);
+        root.add(pane, posX, posY);
     }
 
-    public Image getImage(){
-        return objectImages.get(0);
-    }
 }
