@@ -5,6 +5,8 @@
  */
 package Engine;
 
+import javafx.scene.image.Image;
+
 import java.io.File;
 
 public class GameVariables {
@@ -12,6 +14,6 @@ public class GameVariables {
     public static int gameObjectSize = 40;
     public static int entityObjectSize = 60;
 
-    public static File player = new File("./Textures/Entities/Player/LivePlayer.png");
-    public static File ground = new File("./Textures/GameObjects/Ground.png");
+    public static String playerUrl = "./src/Engine/res/Textures/Entities/Player/LivePlayer.png";
+    public static String groundUrl ="./src/Engine/res/Textures/GameObjects/Ground.png";
 }

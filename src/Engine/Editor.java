@@ -1,26 +1,26 @@
 package Engine;
-import Game.Game;
-import Game.Map;
 
-import javax.swing.*;
-import java.awt.*;
-import java.util.ArrayList;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 
-class Editor extends JFrame {
+import java.net.URL;
+import java.util.ResourceBundle;
 
-    public Editor() {
-        super("Monster Engine Editor");
-        initBasicGUI();
-        Game.createGame();
+public class Editor implements Initializable {
+
+    @FXML
+    private Label label;
+
+    @FXML
+    private void handleButtonAction(ActionEvent event) {
+        System.out.println("You clicked me!");
+        label.setText("Hello World!");
     }
 
-    private void initBasicGUI(){
-        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        this.setLocationRelativeTo(null);
-        this.setLayout(new GridBagLayout());
-        this.pack();
-        this.setSize(900, 600);
-        this.setVisible(true);
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        // TODO
     }
-
 }
