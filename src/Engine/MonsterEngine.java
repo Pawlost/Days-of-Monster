@@ -19,7 +19,7 @@ public class MonsterEngine extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        URL url = new File("src/Engine/res/Layouts/editor.fxml").toURL();
+        URL url = new File("res/Engine/res/Layouts/editor.fxml").toURL();
         Parent root = FXMLLoader.load(url);
         primaryStage.setTitle("Hello Editor");
         primaryStage.setScene(new Scene(root, 300, 600));
