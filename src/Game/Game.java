@@ -1,8 +1,11 @@
 package Game;
 
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
 import javafx.geometry.Pos;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
@@ -22,15 +25,11 @@ public class Game extends Application  {
 
         @Override
         public void start(Stage primaryStage) throws Exception{
-            GridPane root1 = new GridPane();
-
-            root1.setAlignment(Pos.CENTER);
-
-            ArrayList<Map> maps = new ArrayList<>();
-            maps.add(new Map("Map 1", root1));
-
+            URL url = new File("src/Game/res/scene.fxml").toURL();
+            Parent root = FXMLLoader.load(url);
             primaryStage.setTitle("World");
-            primaryStage.setScene(new Scene(root1, 1200, 900));
+
+            primaryStage.setScene(new Scene(root, 1200, 900));
             primaryStage.show();
         }
 

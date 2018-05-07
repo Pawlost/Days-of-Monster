@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane prefHeight="1200" prefWidth="900" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Game.GameScene"
+alignment="CENTER">
+
+    <children>
+        <Label GridPane.columnIndex="0" GridPane.columnSpan="1" text="Best Game" />
+        <GridPane fx:id="map" GridPane.columnIndex="1" GridPane.rowIndex="1" gridLinesVisible="true"><Label text="PIco"/> </GridPane>
+    </children>
+
+</GridPane>
