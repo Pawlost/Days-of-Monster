@@ -8,11 +8,11 @@ import javafx.scene.shape.Rectangle;
 
 public abstract class GameObject {
 
-    private int posX;
-    private int posY;
-    private int width;
-    private int height;
-    private Pane object;
+    protected int posX;
+    protected int posY;
+    protected int width;
+    protected int height;
+    protected Pane object;
     private GridPane root;
 
     protected GameObject(int posX, int posY, int width, int height, GridPane root) {
@@ -75,25 +75,5 @@ public abstract class GameObject {
     public void setPosition(int posX, int posY){
         this.posX = posX;
         this.posY = posY;
-    }
-
-    public int getWidth(){
-        return width;
-    }
-
-    public int getHeight(){
-        return height;
-    }
-
-    public int getPosX(){
-        return posX;
-    }
-
-    public int getPosY(){
-        return posY;
-    }
-
-    public Pane getObject(){
-        return object;
     }
 }

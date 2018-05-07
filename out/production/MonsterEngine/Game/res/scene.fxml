@@ -8,7 +8,7 @@
 alignment="CENTER">
 
     <children>
-        <Label GridPane.columnIndex="0" GridPane.columnSpan="1" text="Pico" />
+        <Label GridPane.columnIndex="0" GridPane.columnSpan="1" text="Best Game" />
         <GridPane fx:id="map" GridPane.columnIndex="1" GridPane.rowIndex="1" gridLinesVisible="true"><Label text="PIco"/> </GridPane>
     </children>
 
