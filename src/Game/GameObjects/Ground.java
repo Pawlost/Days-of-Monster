@@ -1,8 +1,8 @@
 package Game.GameObjects;
 
 import Engine.GameVariables;
+import Game.CombatMap;
 import Game.Entíties.Entity;
-import Game.MapScene;
 import javafx.event.EventHandler;
 import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
@@ -10,15 +10,14 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Rectangle;
-import sun.rmi.runtime.Log;
 
 public class Ground extends GameObject {
     private boolean isActivated;
     private boolean isOpen = true;
-    private MapScene scene;
+    private CombatMap scene;
     private Pane zoneObject;
 
-    public Ground(int posX, int posY, GridPane root, MapScene scene) {
+    public Ground(int posX, int posY, GridPane root, CombatMap scene) {
         super(posX, posY, GameVariables.gameObjectSize, GameVariables.gameObjectSize, root);
         Image groundImage = GameVariables.groundImage;
         this.scene = scene;
@@ -41,6 +40,7 @@ public class Ground extends GameObject {
                 scene.getMainPlayer().move(posX, posY);
             }
         } catch (NullPointerException e){
+            System.out.println("Player is not selected.");
        }
    }
 

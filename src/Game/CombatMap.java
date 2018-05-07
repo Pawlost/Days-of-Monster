@@ -5,13 +5,13 @@ import Game.GameObjects.Ground;
 import javafx.scene.layout.GridPane;
 
 
-public class MapScene{
+public class CombatMap {
     private Ground[][] map = new Ground[GameVariables.mapSize][GameVariables.mapSize];
     private GridPane context;
     private Player[] players;
     private String name;
 
-    public MapScene(String name, GridPane context){
+    public CombatMap(String name, GridPane context){
         this.context = context;
         this.name = name;
         createMap();

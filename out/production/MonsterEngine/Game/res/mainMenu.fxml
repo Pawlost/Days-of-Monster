@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<?import javafx.scene.control.TextField?>
+<GridPane alignment="BASELINE_CENTER" prefHeight="1200" prefWidth="900" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Game.Scenes.MenuScene">
+    <children>
+        <Label text="Days of Monster Game" />
+        <GridPane gridLinesVisible="true" GridPane.rowIndex="1">
+            <children>
+                <Label text="PLAYER 1" GridPane.columnSpan="1" />
+                <TextField/>
+
+
+                <Label text="PLAYER 2" GridPane.columnIndex="3" GridPane.columnSpan="1" />
+            </children>
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+         </rowConstraints>
+        </GridPane>
+    </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

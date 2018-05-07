@@ -1,5 +1,6 @@
-package Game;
+package Game.Scenes;
 
+import Game.CombatMap;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.GridPane;
@@ -14,7 +15,7 @@ public class GameScene implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        ArrayList<MapScene> mapScenes = new ArrayList<>();
-        new MapScene("MapScene 1", map);
+        ArrayList<CombatMap> combatMaps = new ArrayList<>();
+        new CombatMap("CombatMap 1", map);
     }
 }
