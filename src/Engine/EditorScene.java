@@ -1,18 +1,21 @@
 package Engine;
 
 import Game.Game;
+import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import javafx.stage.Window;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Editor implements Initializable {
+public class EditorScene implements Initializable {
 
     @FXML
     private Pane gameWindow;
@@ -24,15 +27,6 @@ public class Editor implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        Game basicGame = new Game();
-        try {
-            basicGame.createGame();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        GridPane game = basicGame.getGame();
-        gameWindow.getChildren().add(game);
 
     }
 }
