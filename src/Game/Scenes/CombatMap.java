@@ -1,6 +1,6 @@
-package Game;
+package Game.Scenes;
 import Engine.GameVariables;
-import Game.Entíties.Player;
+import Game.Entíties.FMonster;
 import Game.GameObjects.Ground;
 import javafx.scene.layout.GridPane;
 
@@ -8,7 +8,7 @@ import javafx.scene.layout.GridPane;
 public class CombatMap {
     private Ground[][] map = new Ground[GameVariables.mapSize][GameVariables.mapSize];
     private GridPane context;
-    private Player[] players;
+    private FMonster[] FMonsters;
     private String name;
 
     public CombatMap(String name, GridPane context){
@@ -27,12 +27,20 @@ public class CombatMap {
     }
 
     private void createEntities(){
-        players = new Player[]{new Player(1, 1, context, map), new Player(2, 2, context, map)};
+        FMonsters = new FMonster[]{new FMonster(1, 1, context, map), new FMonster(1, 4, context, map)};
     }
-    public Player getMainPlayer(){
-        for (Player player:players) {
-            if (player.isSelected()){
-                return player;
+    public FMonster getMainPlayer(){
+        for (FMonster FMonster : FMonsters) {
+            if (FMonster.isSelected()){
+                return FMonster;
+            }
+        }
+        return null;
+    }
+    public FMonster getPlayerOnPositon(int posX, int posY){
+        for (FMonster FMonster : FMonsters) {
+            if (FMonster.getPosX() == posX && FMonster.getPosY() == posY){
+                return FMonster;
             }
         }
         return null;

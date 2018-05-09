@@ -1,7 +1,7 @@
 package Game.GameObjects;
 
 import Engine.GameVariables;
-import Game.CombatMap;
+import Game.Scenes.CombatMap;
 import Game.Entíties.Entity;
 import javafx.event.EventHandler;
 import javafx.scene.image.Image;
@@ -12,8 +12,8 @@ import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Rectangle;
 
 public class Ground extends GameObject {
-    private boolean isActivated;
-    private boolean isOpen = true;
+    private boolean isActivatedZone;
+    private boolean isClosed = false;
     private CombatMap scene;
     private Pane zoneObject;
 
@@ -28,35 +28,36 @@ public class Ground extends GameObject {
         object.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                select();
+                selectGround();
             }
         });
         renderObject(groundImage);
     }
 
-   public void select(){
+   public void selectGround(){
         try {
-            if(scene.getMainPlayer().isSelected() && isActivated) {
-                scene.getMainPlayer().move(posX, posY);
+            if(!isClosed && isActivatedZone) {
+                if (scene.getMainPlayer().isSelected()) {
+                    scene.getMainPlayer().move(posX, posY);
+                }
             }
         } catch (NullPointerException e){
-            System.out.println("Player is not selected.");
+            System.out.println("FMonster is not selected.");
        }
    }
 
-    public void addEntity(Entity entity){
-        if(isOpen) {
-            entity.renderEntity(super.width, width);
+    public void activateZone(){
+        if(!isClosed) {
+            isActivatedZone = true;
+            addObject(zoneObject);
         }
     }
-
-    public void activateZone(){
-        if(isActivated) {
-        isActivated = false;
-        }else {
-            isActivated =true;
-        }
-        addObject(zoneObject);
+    public void deactivateZone(){
+        isActivatedZone = false;
+        removeZone();
+    }
+    public void closeGround(boolean isClosed){
+        this.isClosed = isClosed;
     }
 
     public void removeZone(){
@@ -64,10 +65,10 @@ public class Ground extends GameObject {
     }
 
     public void setActivated(boolean activate) {
-        isActivated = activate;
+        isActivatedZone = activate;
     }
 
     public boolean isActivated() {
-        return isActivated;
+        return isActivatedZone;
     }
 }

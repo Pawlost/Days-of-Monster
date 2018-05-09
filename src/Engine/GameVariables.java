@@ -14,7 +14,7 @@ public class GameVariables {
     public static int selectedLineSize = 5;
 
     public static Image groundImage = new Image("file:src/Curator/Textures/GameObjects/Ground.png");
-    public static Image playerImage = new Image("file:src/Curator/Textures/Entities/Player/LivePlayer.png");
+    public static Image playerImage = new Image("file:src/Curator/Textures/Entities/FMonster/LiveFMonster.png");
     public static Image zoneImage = new Image("file:src/Curator/Textures/GameObjects/ControlZone.png");
     /*---------------------------------------------------------
     MAP1

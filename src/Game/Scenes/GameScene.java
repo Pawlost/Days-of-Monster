@@ -1,6 +1,5 @@
 package Game.Scenes;
 
-import Game.CombatMap;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.GridPane;

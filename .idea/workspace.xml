@@ -3,14 +3,34 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MonsterEngine/Curator/Layouts/editor.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MonsterEngine/Engine/Editor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MonsterEngine/Engine/MonsterEngine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonsterEngine/Engine/MonsterEngine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MonsterEngine/Game/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonsterEngine/Game/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Engine/EditorScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/EditorScene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Engine/Layouts/editor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/Layouts/editor.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Engine/MonsterEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/MonsterEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonsterEngine/Curator/Textures/Entities/EnemyPlayer/DeadEnemyPlayer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonsterEngine/Curator/Textures/Entities/EnemyPlayer/LiveEnemyPlayer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonsterEngine/Curator/Textures/Entities/Player/DeadPlayer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonsterEngine/Curator/Textures/Entities/Player/LivePlayer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonsterEngine/Engine/GameVariables.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonsterEngine/Engine/GameVariables.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonsterEngine/Game/CombatMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonsterEngine/Game/Entíties/Entity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonsterEngine/Game/Entíties/Entity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonsterEngine/Game/Entíties/Player$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonsterEngine/Game/Entíties/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonsterEngine/Game/GameObjects/GameObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonsterEngine/Game/GameObjects/Ground$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonsterEngine/Game/GameObjects/Ground.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonsterEngine/Game/GameObjects/Tree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonsterEngine/Game/Interfaces/MovableObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonsterEngine/Game/Interfaces/MovableObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonsterEngine/Game/Scenes/GameScene.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonsterEngine/Game/Scenes/GameScene.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Curator/Textures/Entities/EnemyPlayer/DeadEnemyPlayer.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Curator/Textures/Entities/EMonster/DeadEMonster.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Curator/Textures/Entities/EnemyPlayer/LiveEnemyPlayer.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Curator/Textures/Entities/EMonster/LiveEMonster.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Curator/Textures/Entities/Player/DeadPlayer.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Curator/Textures/Entities/FMonster/DeadFMonster.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Curator/Textures/Entities/Player/LivePlayer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Engine/GameVariables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/GameVariables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/CombatMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Scenes/CombatMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Entíties/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Entíties/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Entíties/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Entíties/FMonster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/GameObjects/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/GameObjects/GameObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/GameObjects/Ground.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/GameObjects/Ground.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/GameObjects/Tree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Interfaces/MovableObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Interfaces/MovableObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Scenes/GameScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Scenes/GameScene.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,14 +82,115 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="MenuScene.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Game/Scenes/MenuScene.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CombatMap.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Game/Scenes/CombatMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameVariables.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Engine/GameVariables.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="16" column="92" selection-start-line="16" selection-start-column="84" selection-end-line="16" selection-end-column="92" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Entity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Game/Entíties/Entity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FMonster.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Game/Entíties/FMonster.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="56" selection-start-line="56" selection-end-line="56" />
+              <folding>
+                <element signature="e#2738#2739#0" expanded="true" />
+                <element signature="e#2768#2769#0" expanded="true" />
+                <element signature="e#2817#2818#0" expanded="true" />
+                <element signature="e#2850#2851#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Ground.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Game/GameObjects/Ground.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="49" column="11" lean-forward="true" selection-start-line="49" selection-start-column="11" selection-end-line="49" selection-end-column="11" />
+              <folding>
+                <element signature="e#1140#1141#0" expanded="true" />
+                <element signature="e#1180#1181#0" expanded="true" />
+                <element signature="e#1996#1997#0" expanded="true" />
+                <element signature="e#2036#2037#0" expanded="true" />
+                <element signature="e#2067#2068#0" expanded="true" />
+                <element signature="e#2104#2105#0" expanded="true" />
+                <element signature="e#2154#2155#0" expanded="true" />
+                <element signature="e#2196#2197#0" expanded="true" />
+                <element signature="e#2232#2233#0" expanded="true" />
+                <element signature="e#2270#2271#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameObject.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Game/GameObjects/GameObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
+              <folding>
+                <element signature="e#2182#2183#0" expanded="true" />
+                <element signature="e#2209#2210#0" expanded="true" />
+                <element signature="e#2237#2238#0" expanded="true" />
+                <element signature="e#2264#2265#0" expanded="true" />
+                <element signature="e#2297#2298#0" expanded="true" />
+                <element signature="e#2325#2326#0" expanded="true" />
+                <element signature="e#2354#2355#0" expanded="true" />
+                <element signature="e#2383#2384#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameControler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Game/GameControler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="Interface" />
         <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -94,7 +215,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/Game/GameScene.java" />
         <option value="$PROJECT_DIR$/src/Game/MapScene.java" />
-        <option value="$PROJECT_DIR$/src/Game/GameObjects/GameObject.java" />
         <option value="$PROJECT_DIR$/src/Game/Entíties/Player.java" />
         <option value="$PROJECT_DIR$/src/Game/GameObjects/Tree.java" />
         <option value="$PROJECT_DIR$/src/Game/res/combatScene.fxml" />
@@ -103,7 +223,6 @@
         <option value="$PROJECT_DIR$/src/Game/Scenes/MenuScene.java" />
         <option value="$PROJECT_DIR$/src/Game/res/mainMenu.fxml" />
         <option value="$PROJECT_DIR$/src/Game/Scenes/GameScene.java" />
-        <option value="$PROJECT_DIR$/src/Game/GameObjects/Ground.java" />
         <option value="$PROJECT_DIR$/src/Server/MainGameServer.java" />
         <option value="$PROJECT_DIR$/src/Server/ServerAplication.java" />
         <option value="$PROJECT_DIR$/src/Server/ClientApplication.java" />
@@ -117,6 +236,15 @@
         <option value="$PROJECT_DIR$/src/Engine/ApplicationLauncher.java" />
         <option value="$PROJECT_DIR$/src/Engine/EditorScene.java" />
         <option value="$PROJECT_DIR$/src/Engine/MonsterEngine.java" />
+        <option value="$PROJECT_DIR$/src/Engine/GameVariables.java" />
+        <option value="$PROJECT_DIR$/src/Game/Interfaces/Selectable.java" />
+        <option value="$PROJECT_DIR$/src/Game/GameObjects/GameObject.java" />
+        <option value="$PROJECT_DIR$/src/Game/Scenes/CombatMap.java" />
+        <option value="$PROJECT_DIR$/src/Game/Interfaces/MovableObject.java" />
+        <option value="$PROJECT_DIR$/src/Game/Entíties/Entity.java" />
+        <option value="$PROJECT_DIR$/src/Game/GameControler.java" />
+        <option value="$PROJECT_DIR$/src/Game/Entíties/FMonster.java" />
+        <option value="$PROJECT_DIR$/src/Game/GameObjects/Ground.java" />
       </list>
     </option>
   </component>
@@ -132,8 +260,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -145,6 +271,58 @@
               <item name="MonsterEngine" type="b2602c69:ProjectViewProjectNode" />
               <item name="MonsterEngine" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MonsterEngine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MonsterEngine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Textures" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MonsterEngine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MonsterEngine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Textures" type="462c0819:PsiDirectoryNode" />
+              <item name="Entities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MonsterEngine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MonsterEngine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Textures" type="462c0819:PsiDirectoryNode" />
+              <item name="Entities" type="462c0819:PsiDirectoryNode" />
+              <item name="EMonster" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MonsterEngine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MonsterEngine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Textures" type="462c0819:PsiDirectoryNode" />
+              <item name="Entities" type="462c0819:PsiDirectoryNode" />
+              <item name="FMonster" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MonsterEngine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MonsterEngine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Textures" type="462c0819:PsiDirectoryNode" />
+              <item name="Entities" type="462c0819:PsiDirectoryNode" />
+              <item name="Monster" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MonsterEngine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MonsterEngine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Textures" type="462c0819:PsiDirectoryNode" />
+              <item name="GameObjects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MonsterEngine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MonsterEngine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Textures" type="462c0819:PsiDirectoryNode" />
+              <item name="GameObjects" type="462c0819:PsiDirectoryNode" />
+              <item name="Tree" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MonsterEngine" type="b2602c69:ProjectViewProjectNode" />
@@ -184,6 +362,13 @@
               <item name="MonsterEngine" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Game" type="462c0819:PsiDirectoryNode" />
+              <item name="Interfaces" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MonsterEngine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MonsterEngine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Game" type="462c0819:PsiDirectoryNode" />
               <item name="res" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -193,16 +378,12 @@
               <item name="Game" type="462c0819:PsiDirectoryNode" />
               <item name="Scenes" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="MonsterEngine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MonsterEngine" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Server" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -349,35 +530,36 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="7" />
       <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.48242188" weight="0.32909605" />
       <window_info anchor="right" id="Palette&#9;" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5175781" side_tool="true" visible="true" weight="0.32909605" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5214844" side_tool="true" visible="true" weight="0.2937853" />
       <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.48242188" weight="0.2937853" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.47851562" visible="true" weight="0.2937853" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info id="Designer" order="1" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.6703755" visible="true" weight="0.20703125" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.6703755" visible="true" weight="0.20703125" />
+      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.4908854" weight="0.32909605" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info id="UI Designer" order="0" />
       <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49934897" weight="0.3983051" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Application Servers" order="8" />
       <window_info anchor="bottom" id="Problems" order="10" />
+      <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Changes" order="11" />
       <window_info anchor="bottom" id="Profiler" order="13" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="right" id="JetGradle" order="4" />
-      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49283853" weight="0.32909605" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.4830729" weight="0.32909605" />
+      <window_info anchor="bottom" id="Application Servers" order="8" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -393,24 +575,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Engine/MonsterEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="33" column="78" selection-start-line="33" selection-start-column="78" selection-end-line="33" selection-end-column="78" />
-          <folding>
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#381#382#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Engine/EditorScene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Engine/GameVariables.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -418,7 +582,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/CombatMap.java">
+    <entry file="file://$PROJECT_DIR$/src/Game/Scenes/CombatMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="31" column="56" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="56" />
@@ -432,7 +596,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Entíties/Player.java">
+    <entry file="file://$PROJECT_DIR$/src/Game/Entíties/FMonster.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="9" column="88" selection-start-line="9" selection-start-column="88" selection-end-line="9" selection-end-column="88" />
@@ -479,13 +643,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Game/World.java" />
-    <entry file="file://$PROJECT_DIR$/src/Game/Interfaces/MovableObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/com/sun/prism/paint/ImagePattern.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
@@ -503,49 +660,7 @@
     <entry file="file://$PROJECT_DIR$/src/Game/GUI.java" />
     <entry file="file://$PROJECT_DIR$/src/Game/Test.java" />
     <entry file="file://$PROJECT_DIR$/src/Game/GameControl.java" />
-    <entry file="file://$PROJECT_DIR$/src/Engine/GameVariables.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Entíties/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="76" column="74" selection-start-line="76" selection-start-column="74" selection-end-line="76" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/GameObjects/GameObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-493">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/GameObjects/Tree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Entíties/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="25" column="36" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Game/StageControler.java" />
-    <entry file="file://$PROJECT_DIR$/src/Game/GameObjects/Ground.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="42" column="54" selection-start-line="42" selection-start-column="54" selection-end-line="42" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Server/ClientApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -638,47 +753,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="32" column="39" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/CombatMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Scenes/GameScene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Scenes/MenuScene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Engine/ApplicationLauncher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
           <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -700,9 +778,130 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
           <caret line="33" column="78" selection-start-line="33" selection-start-column="78" selection-end-line="33" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="32" column="39" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
           <folding>
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#381#382#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Scenes/GameScene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Interfaces/Selectable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/GameObjects/Tree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Interfaces/MovableObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Scenes/MenuScene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Engine/GameVariables.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" column="92" selection-start-line="16" selection-start-column="84" selection-end-line="16" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Entíties/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/GameObjects/GameObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
+          <folding>
+            <element signature="e#2182#2183#0" expanded="true" />
+            <element signature="e#2209#2210#0" expanded="true" />
+            <element signature="e#2237#2238#0" expanded="true" />
+            <element signature="e#2264#2265#0" expanded="true" />
+            <element signature="e#2297#2298#0" expanded="true" />
+            <element signature="e#2325#2326#0" expanded="true" />
+            <element signature="e#2354#2355#0" expanded="true" />
+            <element signature="e#2383#2384#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/GameControler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Entíties/FMonster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="e#2738#2739#0" expanded="true" />
+            <element signature="e#2768#2769#0" expanded="true" />
+            <element signature="e#2817#2818#0" expanded="true" />
+            <element signature="e#2850#2851#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Scenes/CombatMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/GameObjects/Ground.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="49" column="11" lean-forward="true" selection-start-line="49" selection-start-column="11" selection-end-line="49" selection-end-column="11" />
+          <folding>
+            <element signature="e#1140#1141#0" expanded="true" />
+            <element signature="e#1180#1181#0" expanded="true" />
+            <element signature="e#1996#1997#0" expanded="true" />
+            <element signature="e#2036#2037#0" expanded="true" />
+            <element signature="e#2067#2068#0" expanded="true" />
+            <element signature="e#2104#2105#0" expanded="true" />
+            <element signature="e#2154#2155#0" expanded="true" />
+            <element signature="e#2196#2197#0" expanded="true" />
+            <element signature="e#2232#2233#0" expanded="true" />
+            <element signature="e#2270#2271#0" expanded="true" />
           </folding>
         </state>
       </provider>
